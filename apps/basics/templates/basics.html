@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Página Basics</title>
+    <style>
+        #counter {
+            font-size: 2em;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bem-vindo à página inicial do meu projeto Django!</h1>
+    <h1>Bem-vindo ao aplicativo Basics!</h1>
+    <p>Esta é uma página de exemplo.</p>
+    <div id="counter">0</div>
+
+    <script>
+        // Script para manter a página ativa
+        let count = 0;
+        setInterval(() => {
+            count++;
+            document.getElementById('counter').textContent = count;
+        }, 1000); // Atualiza o contador a cada 1 segundo
+    </script>
 </body>
 </html>
